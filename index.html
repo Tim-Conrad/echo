@@ -1,0 +1,21 @@
+<html>
+  <body>
+
+    <input type="text" id="echoEingabe" placeholder="Echo echo ...">
+    <input type="button" value="Echo" onclick="echo()">
+
+    <div id="echoWand">
+      Gib etwas im oberen Feld ein und es wird ein echo gemacht...
+    </div>
+
+    <script type="text/javascript">
+      function echo(){
+          var echoWand = document.getElementById("echoWand");
+          var echoEingabe = document.getElementById("echoEingabe").value;
+
+          echoWand.innerHTML = echoEingabe+" "+echoEingabe+" ...";
+      }
+    </script>
+
+  </body>
+</html>
